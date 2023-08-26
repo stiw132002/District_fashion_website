@@ -7,12 +7,15 @@
 body,html{
     height: 100%;
     width: 100%;
+    background-color:black;
+    /* overflow: hidden; */
 }
 
 #main{
     min-height: 100%;
     width: 100%;
-    background-color:black;
+ 
+    overflow: hidden;
 
 }
 #header{
@@ -20,25 +23,24 @@ body,html{
     width: 100%; */
     background-color:#1e1e1e;
     color:black;
-    padding: 15px 17px;
+    padding: 1vmax 1.2vmax;
     /* margin: 10px; */
     
     
 }
 
 nav{
-    height: 55px;
-    width: 100%;
+    /* height: 55px; */
+    width: 98%;
     background-color:whitesmoke;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    border-radius: 15px;
+    padding: .7vmax;
+    border-radius: 1.5vmax;
     position: fixed;
-    top: 1vh;
-    /* position: fixed; */
     z-index: 999;
+    /* background-color: pink; */
 }
 
 nav ul {
@@ -46,89 +48,92 @@ nav ul {
     align-items: center;
     justify-content: space-between;
     list-style: none;
+    gap: 2vmax;
+    /* background-color: yellow; */
     
 }
 
 nav ul li{
-    padding: 26px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 900;
+    font-size: 1.5vmax;
 }
 nav h1{
-    margin: 15px;
+    padding-left: 2vmax;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: -1.5px;
     font-size: 1.4vmax;
 }
 
-nav ul button{
-    padding: 10px 25px;
+nav  button{
+    padding: .7vmax;
     font-size: 1vmax;
-    border-radius: 25px;
+    border-radius: 2.5vmax;
     background-color: #1e1e1e;
+    border: none;
     color: white;
-    margin: 10px;
+
 }
 nav:hover{
     cursor: pointer;
 
 }
 
-nav ul i{
+
+nav  i{
     background-color: #d58756;
     border-radius: 50%;
-    font-size: 25px;
-    padding: 5px;
-    margin-right: 10px;
+    font-size: 2vmax;
+    padding: .3vmax;
+    margin-right: 1vmax;
+    
 }
-#filler{
-    margin-top: 50px;
-}
+/* #filler{
+    /* margin-top: 50px; */
+/* } */
 
 #page1{
     position: relative;
-    height: 100vh;
     width: 100%;
     background-color:#1e1e1e;
     color:black;
-    padding: 15px 17px;
+    /* padding: 1.2vmax 1.5vmax; */
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* top: 55px; */
-    /* position: relative; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    margin-top: 4vmax;
+
 }
 
 
 
 #page1-left {
     width: 60%;
-    height: 100%;
-    /* background-color: yellow; */
+    /* height: 100%; */
+    background-color: yellow;
+    /* z-index: 2; */
+    border-radius: 6%;
+    margin: 2vmax;
+    background-image: url("https://images.unsplash.com/photo-1554924821-06226b7202e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1910&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
    
 }
 
-#page1-left img{
-    overflow: hidden;
-    object-fit: cover;
-    height: 95vh;
-    width: 120vh;
-    border-radius: 6%;
-    /* padding: 25px; */
-    /* margin: 10px; */
-}
+
 
 #page1-right {
     width: 40%;
-    height: 100%;
     background-color: #242222;
     border-radius: 6%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: start;
     justify-content: space-between;
     color: #fff;
-    padding: 40px 30px;
+    padding: 3vmax 2vmax ;
+    margin: 1.7vmax;
 
     
 }
@@ -136,10 +141,12 @@ nav ul i{
 #p1r-upper h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 100;
-    font-size: 4vmax;
-    letter-spacing: -3px;
+    font-size: 3.5vmax;
+    letter-spacing: -.3vmax;
     /* word-spacing: -10px; */
-    line-height: 49px;
+    line-height: 3.3vmax;
+    padding-left: 1vmax;
+    margin-bottom: 2vmax;
     
 }
 #p1r-upper img{
@@ -154,17 +161,22 @@ nav ul i{
 #p1r-upper h2{
     font-size: 1.2vmax;
     font-family: Gilroy;
-    letter-spacing: 1px;
-    padding-top: 15px;
+    letter-spacing: .1vmax;
+    padding-top: 1.1vmax;
     font-weight: 300;
+    padding-left: 1vmax;
+    margin-bottom: 5vmax;
 }
 
 #p1r-lower{
     font-size: 2vmax;
-    line-height: 50px;
+    line-height: 3.5vmax;
     font-family: Roboto;
     font-weight: 900;
-    letter-spacing: -2px;
+    letter-spacing: -.2vmax;
+    margin-top: 2vmax;
+    /* background-color: red; */
+    padding-left: 1vmax;
 }
 #p1r-lower img{
     height:3.5vmax;
@@ -181,40 +193,42 @@ nav ul i{
 
 #footer{
     
-    position: relative;
     width: 100%;
-    height: 40vh;
     background-color:  rgb(40, 38, 38);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 2vmax;
 }
 
 #footer-1{
     width: 31%;
-    height: 95%;
     background-color:#eb5853;
-    border-radius: 30px;
+    border-radius: 3vmax;
     color: white;
-    padding: 20px;
+    padding: 2vmax;
     display: flex;
     flex-direction: column;
     justify-content: space-between
+    
     
 
 }
 #footer h1{
     font-family: Roboto;
     letter-spacing: -.5px;
+    font-size: 3vmax;
+    padding-bottom: .5vmax;
 }
- #footer h1 p{
-    padding-top: 10px;
-    font-size: 19px;
-    line-height: 22px;
+ #footer p{
+    /* padding-top: 1vmax; */
+    /* font-size: 1vmax; */
+    /* line-height: 2.2vmax; */
     font-family: Gilroy;
     font-weight: 300;
-    letter-spacing: -.3px;
+    /* letter-spacing: -.3px; */
+    font-size: 1.5vmax;
+    
 } 
 
 
@@ -223,12 +237,12 @@ nav ul i{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.5vmax;
+    /* font-size: 1.5vmax; */
     /* font-weight: 100; */
     
 }
 #footer h3{
-    font-size: 21px;
+    font-size: 1.5vmax;
     font-family: Gilroy;
     font-weight:300;
     /* padding-bottom: 10px; */
@@ -239,12 +253,11 @@ nav ul i{
 }
 #footer-2{
     width: 31%;
-    height: 95%;
+    /* height: 95%; */
     background-color: #684cea;
-    border-radius: 30px;
-    border-radius: 30px;
+    border-radius: 3vmax;
     color: white;
-    padding: 20px;
+    padding: 2vmax;
     display: flex;
     flex-direction: column;
     justify-content: space-between
@@ -253,12 +266,10 @@ nav ul i{
 
 #footer-3{
     width: 31%;
-    height: 95%;
     background-color: #934cea;
-    border-radius: 30px;
-    border-radius: 30px;
+    border-radius: 3vmax;
     color: white;
-    padding: 20px;
+    padding: 2vmax;
     display: flex;
     flex-direction: column;
     justify-content: space-between
@@ -284,33 +295,34 @@ nav ul i{
     /* align-items: center; */
     justify-content: space-between;
     color: #fff;
-    padding: 40px 30px;
-    margin: 20px;
+    padding: 4vmax 3vmax;
+    margin: 2vmax;
     
 }
 #page2-left h1{
-    font-size: 75px;
-    letter-spacing: -3px;
-    line-height: 70px;
+    font-size: 4.5vmax;
+    letter-spacing: -.3vmax;
+    line-height: 4vmax;
     font-family: roboto;
     font-weight: 600;
 }
 
 #page2-left h2{
-    font-size: 21px;
+    font-size: 1.8vmax;
     font-family: Gilroy;
     font-weight:300;
+   
 
 }
 
 #page2-left button{
-    padding: 15px 20px;
-    margin-top: 20px;
+    padding: 1vmax 1.8vmax;
+    margin-top: 2vmax;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1 solid white;
     color: white;
-    border-radius: 35px;
-    font-size: 17px;
+    border-radius: 3.5vmax;
+    font-size: 1.5vmax;
     /* text-decoration: uppercase; */
 }
 
@@ -319,29 +331,29 @@ nav ul i{
 
 #page2-right{
     width: 55vw;
-    height: 100%;
+    /* height: 100%; */
     /* background-color: orange; */
 }
 
 #page2-right img{
-    padding: 15px 20px;
-    margin-top: 20px;
+    padding: 1.2vmax 1.8vmax;
+    margin-top: 2vmax;
     overflow: hidden;
     object-fit: cover;
     height: 95%;
     width: 95%;
-    border-radius: 6%;
+    border-radius: 10%;
     object-position: right;
 }
 
 #page2-footer{
-    height: 100px;
+    /* height: 100px; */
     width: 100%;
     background-color: #111111;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 25px;
+    padding: 2vmax 2.3vmax;
     
 }
 #page2-footer h1{
@@ -358,8 +370,8 @@ nav ul i{
     color: white;
     font-weight: 800;
     font-size: 2vmax;
-    border-radius: 50px;
-    padding : 10px;
+    border-radius: 3vmax;
+    padding : 1vmax;
     border:1px solid #fff ;
     
 }
@@ -374,22 +386,23 @@ nav ul i{
 #page3{
     
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     background-color: #111111;
+    /* background-color: red; */
 }
 
 #brands{
-    width: 100%;
-    height: 550px;
+    width: 90vmax;
+    /* height: 40vmax; */
     /* background-color: white; */
     /* border-bottom: 2px solid rgba(162, 145, 145, 0.198); */
-    padding: 10px;
+    padding: 1vmax;
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
-    padding-top: 40px;
-    padding-left: 30px;
+    padding-top: 4vmax;
+    padding-left: 3vmax;
     
 }
 #brands::-webkit-scrollbar{
@@ -398,14 +411,16 @@ nav ul i{
 
 
 #clothes{
-    width: 500px;
-    height: 500px;
+    width: 30vmax;
+    height: 30vmax;
     /* background-color: red; */
     /* border-radius: 50%; */
     display: inline-block;
     border: 1px solid white;
     overflow: hidden;
-    margin-right: 30px;
+    margin-right: 3vmax;
+    
+   
     
 
 }
@@ -413,8 +428,8 @@ nav ul i{
 
 
 #clothes img{
-    width: 500px;
-    height: 500px;
+    width: 30vmax;
+    height: 30vmax;    
     object-fit: cover;
     object-position: center;
     
@@ -422,64 +437,141 @@ nav ul i{
 
 #page3 button {
     width: 90%;
-    height: 40px;
+    /* height: 1vmax; */
     background-color: #684cea;
-    padding: 30px;
-    margin: 50px;
-    border-radius: 20px;
+    margin: auto;
+    margin-top: 2vmax;
+    margin-bottom: 2vmax;
+    padding: 1vmax;
+    border-radius: 2vmax;
     color: white;
     font-size: 1.8vmax;
     /* position: absolute; */
     display: flex;
     justify-content: center;
     align-items: center;
+    /* text-align: center; */
     font-weight: 700;
-    letter-spacing: -1px;
+    letter-spacing: -.1vmax;
+    border: none;
 }
 
 
 #email{
     width: 100%;
-    height: 255px;
+    /* height: 25.5vmax; */
     background-color: #1e1e1e;
-    border-radius: 30px;
-    padding: 25px;
-
+    border-radius: 3vmax;
+    padding: 2.5vmax;
+    text-align: center;
+    justify-content: center;
 }
 
 #email h1{
     font-size: 3vmax;
-    padding-left: 35px;
+    padding-left: 3.5vmax;
     color: white;
+    text-align: center;
 }
+
 
 #email h1 span{
     color: #eaa768;
 }
 
 #email h2{
-    font-size: 100px;
+    font-size: 8vmax;
     
 }
 input,
 input::placeholder{
     width: 75%;
-    height: 50px;
-    border-radius: 20px;
-    font: 1.25rem/3 sans-serif;
-    padding-left: 10px;
-    margin-left: 95px;
+    height: 4.5vmax;
+    border-radius: 2vmax;
+    font: 2vmax sans-serif;
+    padding-left: 1vmax;
+    border: none;
+    
 }
 
 #email h2 button{
-    width: 7vmax;
-    height: 50px;
-    border-radius: 15px;
-    font: 1.5vmax sans-serif ;
-    padding-bottom: 10px;
+    border-radius: 1.5vmax;
+    font: 1.8vmax sans-serif ;
     background-color: #684cea;
     color: white;
+    height: 4vmax;
+    width: 8vmax;
+    border: none;
+    padding: .5vmax;
+    border: none;
+   
 
 
 } 
+
+
+@media (max-width:890px) {
+    nav h1{
+        /* margin: 15px; */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: -1px;
+        font-size: 2.5vmax;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    nav button{
+        font-size: 1.5vmax;
+    }
+
+    /* #page1-left img{ */
+        /* height: 80vh; */
+        /* width: 90%; */
+        /* margin-bottom: 5vmax; */
+    
+
+    #p1r-upper h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 100;
+        font-size: 4vmax;
+        letter-spacing: -.2vmax;
+        /* word-spacing: -10px; */
+        line-height: 4vmax;
+        
+        
+    }
+    #p1r-upper h2{
+        font-size: 1.5vmax;
+        font-family: Gilroy;
+        letter-spacing: 1px;
+        /* padding-top: 1.5vmax; */
+        font-weight: 300;
+        /* text-align: justify; */
+        break-after: none;
+        
+    }
+
+    #p1r-lower{
+        font-size: 2.3vmax;
+        line-height: 4vmax;
+        font-family: Roboto;
+        font-weight: 900;
+        letter-spacing: -.4vmax;
+    }
+    #footer h1{
+        font-family: Roboto;
+        letter-spacing: -.5px;
+        
+    }
+    #page2{
+        height: 50vmax;
+    }
+
+    
+    
+
+    
+}
 
